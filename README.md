@@ -41,6 +41,8 @@ pytestを用いたユニットテスト
 ```bash
 docker compose exec mypython pytest test/test_compute1.py
 docker compose exec mypython pytest test/test_compute2.py
+docker compose exec mypython pytest -v --cov --cov-report=html test/test_compute2.py
+docker compose exec mypython pytest -v --cov --cov-report=xml test/test_compute2.py
 ```
 
 停止
